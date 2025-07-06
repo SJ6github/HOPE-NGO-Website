@@ -37,5 +37,3 @@ To learn more about the tools used in these projects, take a look at the followi
 - [OpenCV Python Documentation](https://docs.opencv.org/master/d6/d00/tutorial_py_root.html) – learn about OpenCV’s Python features and tutorials.
 - [MediaPipe Solutions](https://developers.google.com/mediapipe/solutions) – official MediaPipe documentation and examples.
 - [MediaPipe GitHub Repository](https://github.com/google/mediapipe) – the open-source codebase of MediaPipe.
-
-
