@@ -2,8 +2,6 @@
 
 This is a responsive NGO website built using **HTML**, **CSS**, and **JavaScript**, showcasing a clean and functional interface for login, registration, dashboard, and gallery features.
 
-**Note**: This version is GitHub-safe — Firebase API keys have been removed for security reasons.
-
 ---
 
 [View Live Site on Vercel](https://ngo-website.vercel.app)
