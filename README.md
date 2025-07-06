@@ -4,10 +4,6 @@ This is a responsive NGO website built using **HTML**, **CSS**, and **JavaScript
 
 ---
 
-[View Live Site](ngo-website-green.vercel.app/)
-
----
-
 ## Firebase Integration (for Local Testing)
 
 Firebase setup is excluded from this public version. To test login/register locally:
