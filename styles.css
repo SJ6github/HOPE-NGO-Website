@@ -1,0 +1,641 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+        
+:root {
+    --yellow: #dcb700;
+    --blue: #040831;
+    --lightYellow: #e6e9b7;
+    --lightBlue: #032e6b;
+   
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+button, body{
+    font-family: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p{
+    font-size: 14px;
+    line-height: 26px;
+}
+
+.fullContainer{
+    width: 100%;
+}
+
+.container{
+    width: 1140px;
+    margin: auto;
+}
+
+
+/* about us */
+.sectionTitle{
+    width: 300px;
+    border-bottom: 3px solid var(--yellow);
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 200;
+    margin: 0 auto 50px;
+    position: relative;
+    padding: 10px 0;
+    text-transform: uppercase;
+}
+
+/* for rhombus design in underline */
+.sectionTitle::after{
+    display: inline-block;
+    content: "";
+    height: 15px;
+    width: 15px;
+    background-color: var(--yellow);
+    position: absolute;
+    left: calc(50% - 10px);
+    top: calc(75% - 7px);
+    transform: rotate(45deg) translate(50%, 50%);
+    border: 3px solid #fff;
+}
+
+/* about us upper padding */
+section{
+    padding: 50px 0;
+    position: relative;
+}
+
+/* Home style starts */
+header{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.558);
+    position: fixed;
+    z-index: 2;
+    top: 0; /* add this to fix the position */
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+header .container .logo{
+    padding: 10px 0;
+    height: 85px;
+}
+
+header .container .logo img{
+    height: 100%;
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+}
+
+header nav ul li a{
+    display: inline-block;
+    height: 75px;
+    line-height: 75px;
+    padding: 0 15px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 17px;
+    color: #fff;
+    transition: 0.3s; 
+    box-sizing: border-box;
+}
+
+/* header nav ul li a:hover{
+    background-color: var(--yellow);
+} */
+
+/* banner image and basics */
+.banner{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url("Gallery/mainpg.png");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Every child deserves a happy life */
+.banner h1{
+    margin-top: 230px;
+    display: inline-block;
+    font-size: 3.5rem;
+    color: #ffffff;
+    text-shadow: 0 0 2px #000;
+    width: 50%;
+    line-height: 4.2rem;
+    font-weight: 100;
+}
+
+/* Save lives box decor */
+.banner h1 span{
+    background-color: var(--yellow);
+    display: inline-block;
+    line-height: 3.5rem;
+    padding: 0 15px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+/* below text styling */
+.banner p{
+    color: #0f215c;
+    width: 50%;
+    text-shadow: 0 0 1px #000;
+    margin-top: 10px;
+}
+
+/* Explore more button */
+.banner button{
+    background-color: var(--yellow);
+    border: 0;
+    outline: none;
+    color: #ffffff;
+    padding: 10px 15px;
+    margin-top: 20px;
+    font-size: 13px;
+    border-radius: 3px;
+    font-weight: 600;
+}
+
+
+
+/* aboutSection starts */
+
+/* for 3 cards */
+#aboutSection .cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+    position: relative;
+    height: 245px;
+}
+
+/* cards ke andar ka matter */
+#aboutSection .cards > div{
+    width: 350px;
+    background-color: var(--yellow);
+    padding: 35px;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    height: 215px;
+    border: 1px solid #ccc;
+    transition: 0.5s;
+}
+
+/* hover in cards border */
+#aboutSection .cards > div:hover{
+    margin-top: -20px;
+    width: 400px;  
+    height: auto;  
+    padding: 55px; 
+    border-color: #fff;
+}
+
+#aboutSection .cards > div .title{
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+#aboutSection .cards > div p{
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+/* inside card text */
+#aboutSection .cards > div button{
+    border: 1px solid var(--blue);
+    color: #baa8a8;
+    outline: none;
+    padding: 7px 15px;
+    margin-top: 15px;
+    font-size: 12px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#aboutSection .cards > div:hover button{
+    background-color: var(--lightBlue);
+}
+
+/* AboutSection ends */
+
+/* programSection starts */
+.programs {
+        background-color: #e2e2e2;
+}
+
+
+.programs .boxContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 50px;
+}
+
+.programs .boxContainer .box {
+    background-color: #fff;
+    text-align: center;
+    padding-bottom: 25px;
+    border-radius: 5px;
+    box-shadow: 0 0 3px 0 #c5c5c5;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.programs .boxContainer .box .cardImg {
+    width: 100%;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px 5px 0 0;
+}
+
+.programs .boxContainer .box .cardImg:after {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    filter: contrast(50%);
+    transition: 0.5s;
+}
+
+/* 4 boxes */
+.programs .boxContainer .box:nth-child(1) .cardImg,
+.programs .boxContainer .box:nth-child(1) .cardImg:after {
+    background-image: url(Gallery/edn.png);
+}
+
+.programs .boxContainer .box:nth-child(2) .cardImg,
+.programs .boxContainer .box:nth-child(2) .cardImg:after {
+    background-image: url(Gallery/healthcare.webp);
+}
+
+.programs .boxContainer .box:nth-child(3) .cardImg,
+.programs .boxContainer .box:nth-child(3) .cardImg:after {
+    background-image: url(Gallery/food.webp);
+}
+
+.programs .boxContainer .box:nth-child(4) .cardImg,
+.programs .boxContainer .box:nth-child(4) .cardImg:after {
+    background-image: url(Gallery/water.webp);
+}
+
+/* hover for these boxes */
+.programs .boxContainer .box:hover .cardImg:after {
+    top: 100%;
+}
+
+.programs .boxContainer .box .programTitle {
+    font-size: 17px;
+    font-weight: 500;
+    margin-top: 15px;
+    color: var(--lightBlue);
+}
+
+.programs .boxContainer .box .donationSum {
+    font-size: 12px;
+    font-weight: 500;
+    color: #525252;
+    margin-top: 12px;
+    margin-bottom: 5px;
+}
+
+.programs .boxContainer .box .donationSum span {
+    color: var(--lightBlue);
+}
+
+.programs .boxContainer .box button {
+    position: absolute;
+    background-color: var(--yellow);
+    left: 50%;          
+    color: #fff;
+    transform: translate(-50%);
+    bottom: -15px;
+    border-radius: 50px;
+    border: 0;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+/* programSection ends */
+
+/* gallerySection starts */
+.gallery .galleryContainer {
+    column-count: 4;
+    column-gap: 25px;
+}
+
+.gallery .galleryContainer .pic {
+    position: relative;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.gallery .galleryContainer img {
+    width: 100%;
+    display: block;
+}
+
+.gallery .galleryContainer .title {
+    position: absolute;
+    background-color: var(--lightYellow);
+    padding: 6px;
+    margin: 6px;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: bold;
+    opacity: 0;
+    z-index: 1;
+}
+
+#formSection .form {
+    width: 500px;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#formSection .form h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    /* . */
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--lightBlue);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 2px solid var(--yellow);
+    padding-bottom: 10px;
+}
+
+#formSection .form-control {
+    margin-bottom: 20px;
+}
+
+#formSection .form-control label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#formSection .form-control input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#formSection .form-control input:focus {
+    outline: none;
+    box-shadow: 0 0 2px 1px var(--yellow);
+}
+
+#formSection .form-control span {
+    display: none;
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+#formSection .form-control span.error {
+    display: block;
+}
+
+#formSection .form button {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--yellow);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#formSection .form button:hover {
+    background-color: #f1c40f;
+}
+
+/* footer starts */
+footer {
+    margin-top: 50px;
+    background-color: var(--yellow);
+    color: white;
+    padding: 50px 0;
+    font-size: 14px;
+}
+
+footer .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 50px;
+}
+
+footer .title {
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-bottom: 2px solid;
+    margin-bottom: 30px;
+    padding: 0 0 5px 0;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer .linksContainer ul {
+    list-style-type: none;
+}
+
+footer .linksContainer ul li a {
+    text-decoration: none;
+    color: black;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+footer .newsLetterContainer img {
+    height: 40px;
+    margin-bottom: 11px;
+}
+
+footer .newsLetterContainer input {
+    background-color: transparent;
+    border: 1px solid #7f7f7f;
+    outline: none;
+    padding: 10px 15px;
+    width: 100%;
+    margin-top: 10px;
+    color: #ccc;
+    border-radius: 30px;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 1140px) {
+    .container {
+        width: 100%;
+        padding: 0 15px;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .banner h1{
+        margin-top: 200px;
+    }
+    #aboutSection .cards {
+        justify-content: space-around;
+        height: auto;
+    }
+
+    #aboutSection .cards > div {
+        margin: 10px 0;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .banner{
+        background-position-x: 45%;
+    }
+    .banner h1{
+        font-size: 2.5rem;
+    }
+    .programs .boxContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header nav {
+        position: relative;
+        border: 2px solid #fff;
+        height: 30px;
+        width: 30px;
+        margin-top: 20px;
+        border-radius: 5px;
+    }
+    header nav:after{
+        top: 17px;
+    }
+    header nav:before{
+        top: 7px;
+    }
+    header nav:after, header nav:before {
+        content: "";
+        height: 2px;
+        width: 17px;
+        background-color: #fff;
+        display: block;
+        position: absolute;
+        left: 5px;
+    }
+
+    header nav ul{
+        position: absolute;
+        right: -400px;
+        top: 53px;
+        transition: 0.5s;
+    }
+    header nav:hover ul{
+        right: 0;
+    }
+    header nav ul li{
+        display: block;
+    }
+    header nav ul li a{
+        width: 300px;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .banner{
+        background-position-x: 65%;
+    }
+    .banner p{
+        font-size: 14px;
+    }
+    .banner p, .banner h1 {
+        width: 70%;
+    }
+ 
+    #aboutSection .cards > div:hover{
+        width: 350px;
+    }
+
+    .gallery .galleryContainer{
+        column-count: 2;
+    }
+}
+
+@media screen and (max-width: 420px){
+    .banner h1{
+        margin-top: 150px;
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+    .banner button{
+        margin-bottom: 10px;
+    }
+
+    #aboutSection p{
+        text-align: justify;
+    }
+
+    #aboutSection .cards > div:hover{
+        width: 400px;
+        margin-top: 10px;
+        padding: 35px;
+    }
+    .programs .boxContainer {
+        grid-template-columns: 1fr;
+    }
+    .gallery .galleryContainer{
+        column-count: 1;
+    }
+
+    footer .container{
+        grid-template-columns: 1fr;
+    }
+    .banner h1{
+        margin-top: 100px;
+    }
+}
+
+#colorChangingButton {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  #colorChangingButton:hover {
+    opacity: 0.8;
+  }
+
+#footer-background {
+  height: 100px; 
+  background-color: #f0f0f0; 
+}

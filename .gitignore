@@ -1,0 +1,4 @@
+# These files are not currently used, but this is added for future security
+# If environment variables or private keys are used later, Git will ignore them
+.env
+*.key
