@@ -6,8 +6,6 @@ This is a responsive NGO website built using **HTML**, **CSS**, and **JavaScript
 
 ---
 
-## 🚀 Live Demo
-
 👉 [View Live Site on Vercel](https://ngo-website.vercel.app)
 
 ---
